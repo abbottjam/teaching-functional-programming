@@ -158,17 +158,17 @@ Cover the Haskell stuff: algebraic data types, pattern matching
 Don't forget Proctor's blog posts. And the recently printed-out article ("Immutability in Ruby"). Also, solnic's Transformers.
 
 ##Some thoughts on 'Selling FP'
-Some people have wondered how they should go about explaining the benefits of FP to people from other paradigms. For me it's simple:
+Some people have wondered how they should go about explaining the benefits of FP to people coming from other paradigms. To me it's simple:
 
 **FP allows us to solve problems by minimizing and avoiding complexity in our code.**
 
 This is valuable because most of the time, **complexity is the problem**.
 
-Like Einstein supposedly said, "Problems cannot be solved at the same level of thinking that generated them".
+Like Einstein supposedly said, "Problems cannot be solved at the same level of thinking that created them".
 
 Bugs are a drain on time, budgets, energy, and enjoyment of programming. Bugs arise from:
 
-1. Complexity (cyclomatic; size of codebase; the abstractions we choose)
+1. Complexity (cyclomatic; size of codebase; the abstractions chosen)
 2. Mutable state
 
 FP solves both.
@@ -184,7 +184,7 @@ Proving programs becomes easier because no global mutable state, hence no side e
 
 Pre- and post-condtions fall naturally out of the function abstraction. All you have is functions, their arguments / input, and output. That's one simple abstraction not entangled with anything on the outside that it has no control over.
 
-For this reason, testing becomes much easier.
+Because of that, testing becomes much easier.
 
 This is what "reasoning about programs" means — it's not some abstract philosophical pastime in which we get to argue whether this or that program is "good" and why; it's about *proving program correctness*.
 
