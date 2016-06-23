@@ -76,7 +76,9 @@ This is taken from The Joy of Clojure by Fogus & Houser:
 
 How can you be sure that the final value of x is 6?
 
-Statements vs expressions. Pure functions compose to pure expressions; methods compose to statements. Pure expressions obey referential transparency, while statements do not.
+Statements vs expressions. 
+
+Pure functions compose to pure expressions; methods compose to statements. Pure expressions obey referential transparency, while statements do not.
 
 **Example: inc() function**
 Impure vs pure (doesn't depend on non-local vars)
