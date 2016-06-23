@@ -143,7 +143,7 @@ What about immutability for data structures?
 * http://programmers.stackexchange.com/questions/235558/what-is-state-mutable-state-and-immutable-state
 * https://en.wikipedia.org/wiki/Persistent_data_structure
 
-##Functions as main unit of abstraction ("1st-class citizens")
+##5. Functions as main unit of abstraction ("1st-class citizens")
 Functions as values
 
 Passing and returning functions
@@ -152,14 +152,14 @@ Passing and returning functions
 
 Partial function application, currying
 
-##5. Pareto analysis applied to FP: a small number of functions doing 80% of the job.
+##6. Pareto analysis applied to FP: a small number of functions doing 80% of the job.
 * map, reduce/inject, select
 * Clojure's built-in functions
 
-##6. Types
+##7. Types
 In Haskell, these work as kind of a program specification mechanism. So in Haskell, there is a way to make a program consisting solely of input and output specifications (in form of types), with no function body, to compile! This is a powerful method of contract-based programming.
 
-##7. Advanced topics
+##8. Advanced topics
 Cover the Haskell stuff: algebraic data types, pattern matching, etc
 
 ##TODO: FP in Ruby list
