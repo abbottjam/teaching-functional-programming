@@ -67,7 +67,7 @@ Global mutable state. Parallel to above point.
 Functions vs methods. Functions obey referential transparency, while methods do not.
 
 **Example:**
-This is taken from Fogus'es JoC:
+This is taken from The Joy of Clojure by Fogus & Houser:
 
     # This is Python code
     x = [5]
