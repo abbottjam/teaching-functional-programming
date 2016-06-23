@@ -1,29 +1,19 @@
 #Basic Course in Functional Programming Concepts
 
-This outline for a functinal programming course is based on the concepts that I have explored
-while transitioning from OO (Java, Ruby) to FP (Ruby, Clojure). As such, it reflects my own
-learning path, and the way these concepts are interlinked in my own brain.
+This outline for a functinal programming course is based on the concepts that I have explored while transitioning from OO (Java, Ruby) to FP (Ruby, Clojure). As such, it reflects my own learning path, and the way these concepts are interlinked in my own brain.
 
 A couple of points regarding teaching methodology:
 
-1. I believe there is value in teaching concepts first. Concepts pertain to the underlying
-model of computation and apply across FP languages, as opposed to syntax and language design.
-To illustrate: referential transparency is an example of a concept; S-expressions are a
-language design feature that manifest this concept in the Lisp family of functional languages.
+1. I believe there is value in teaching concepts first. Concepts pertain to the underlying model of computation and apply across FP languages, as opposed to syntax and language design. To illustrate: referential transparency is an example of a concept; S-expressions are a language design feature that manifest this concept in the Lisp family of functional languages.
 
-2. I do think that code examples are just as important. How do you bridge the theoretical (concepts)
-and the practical (code)? One answer could be to illustrate each concept with the simplest
-of examples.
+2. I do think that code examples are just as important. How do you bridge the theoretical (concepts) and the practical (code)? One answer could be to illustrate each concept with the simplest of examples.
 
-3. Ideally, examples should have an anchor in previous knowledge. That is, you learn best when
-you are able to relate the new stuff to something you already know and have used. Actually, there
-is a whole teaching methodology that teaches new languages by translating programs from a familiar language to the new one (exorcism).
+3. Ideally, examples should have an anchor in previous knowledge. That is, you learn best when you are able to relate the new stuff to something you already know and have used. Actually, there is a whole teaching methodology that teaches new languages by translating programs from a familiar language to the new one (exorcism).
 
 ##Referential transparency
 How we think about programs in FP: equational thinking.
 
-Example: in math, 2+2 can be substituted by 4, and vice versa. This is the universal FP pattern
-originating from lambda calculus.
+Example: in math, 2+2 can be substituted by 4, and vice versa. This is the universal FP pattern originating from lambda calculus.
 
 The function at the core of LISP: eval. Thanks to eval, LISP can evaluate itself!
 
@@ -86,8 +76,7 @@ This is taken from Fogus'es JoC:
 
 How can you be sure that the final value of x is 6?
 
-Statements vs expressions. Pure functions compose to pure expressions; methods compose to statements.
-Pure expressions obey referential transparency, while statements do not.
+Statements vs expressions. Pure functions compose to pure expressions; methods compose to statements. Pure expressions obey referential transparency, while statements do not.
 
 **Example: inc() function**
 Impure vs pure (doesn't depend on non-local vars)
@@ -125,8 +114,7 @@ Extended example: Guido's graphs.
 ##Confluence: the order of declaration doesn't matter
 Relation to declarative and logical programming
 
-Declarative tells the computer *what* to do; imperative tells *how* to do it. Parallel to
-expressions vs statements again.
+Declarative tells the computer *what* to do; imperative tells *how* to do it. Parallel to expressions vs statements again.
 
 FP is a subset of declarative.
 
@@ -153,8 +141,7 @@ Functions as values
 
 Passing and returning functions
 
-"It is better to have 100 functions operate on one data structure than to have 10 functions
-operate on 10 data structures." - Alan J. Perlis (http://clojure.org/about/rationale)
+"It is better to have 100 functions operate on one data structure than to have 10 functions operate on 10 data structures." - Alan J. Perlis (http://clojure.org/about/rationale)
 
 Partial function application, currying
 
@@ -163,27 +150,21 @@ Partial function application, currying
 * Clojure's built-in functions
 
 #Types
-In Haskell, these work as kind of a program specification mechanism. So in Haskell,
-there is a way to make a program consisting solely of input and output specifications
-(in form of types), with no function body, to compile! This is a powerful method of
-contract-based programming.
+In Haskell, these work as kind of a program specification mechanism. So in Haskell, there is a way to make a program consisting solely of input and output specifications (in form of types), with no function body, to compile! This is a powerful method of contract-based programming.
 
 Cover the Haskell stuff: algebraic data types, pattern matching
 
 #TODO: FP in Ruby list
-Don't forget Proctor's blog posts. And the recently printed-out article ("Immutability in Ruby"). Also,
-solnic's Transformers.
+Don't forget Proctor's blog posts. And the recently printed-out article ("Immutability in Ruby"). Also, solnic's Transformers.
 
 ##Some thoughts on 'Selling FP'
-Some people have wondered how they should go about explaining the benefits of FP to
-people from other paradigms. For me it's simple:
+Some people have wondered how they should go about explaining the benefits of FP to people from other paradigms. For me it's simple:
 
-*FP allows us to solve problems by minimizing and avoiding complexity in our code.*
+**FP allows us to solve problems by minimizing and avoiding complexity in our code.**
 
-This is valuable because most of the time, *complexity is the problem*.
+This is valuable because most of the time, **complexity is the problem**.
 
-Like Einstein supposedly said, "Problems cannot be solved at the same level of thinking
-that generated them".
+Like Einstein supposedly said, "Problems cannot be solved at the same level of thinking that generated them".
 
 Bugs are a drain on time, budgets, energy, and enjoyment of programming. Bugs arise from:
 
@@ -192,10 +173,7 @@ Bugs are a drain on time, budgets, energy, and enjoyment of programming. Bugs ar
 
 FP solves both.
 
-It solves 1) by not relying on complex abstractions (like objects); and limiting code to
-data + functions. Code is simply functions applied to data. At the same time, *code itself*
-is data, which is the most powerful abstraction available in the whole of programming, period.
-So FP is both simple AND powerful.
+It solves 1) by not relying on complex abstractions (like objects); and limiting code to data + functions. Code is simply functions applied to data. At the same time, *code itself* is data, which is the most powerful abstraction available in the whole of programming, period. So FP is both simple AND powerful.
 
 It solves 2) by banishing global mutable state.
 
@@ -204,15 +182,11 @@ So it follows that if you want to have less bugs, study FP.
 ##How Computer Science goodness becomes easy & natural when you're doing FP
 Proving programs becomes easier because no global mutable state, hence no side effects.
 
-Pre- and post-condtions fall naturally out of the function abstraction. All you have is
-functions, their arguments / input, and output. That's one simple abstraction not entangled
-with anything on the outside that it has no control over.
+Pre- and post-condtions fall naturally out of the function abstraction. All you have is functions, their arguments / input, and output. That's one simple abstraction not entangled with anything on the outside that it has no control over.
 
 For this reason, testing becomes much easier.
 
-This is what "reasoning about programs" means — it's not some abstract philosophical pastime
-in which we get to argue whether this or that program is "good" and why; it's about
-*proving program correctness*.
+This is what "reasoning about programs" means — it's not some abstract philosophical pastime in which we get to argue whether this or that program is "good" and why; it's about *proving program correctness*.
 
 
 
