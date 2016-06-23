@@ -1,0 +1,218 @@
+#Basic Course in Functional Programming Concepts
+
+This outline for a functinal programming course is based on the concepts that I have explored
+while transitioning from OO (Java, Ruby) to FP (Ruby, Clojure). As such, it reflects my own
+learning path, and the way these concepts are interlinked in my own brain.
+
+A couple of points regarding teaching methodology:
+
+1. I believe there is value in teaching concepts first. Concepts pertain to the underlying
+model of computation and apply across FP languages, as opposed to syntax and language design.
+To illustrate: referential transparency is an example of a concept; S-expressions are a
+language design feature that manifest this concept in the Lisp family of functional languages.
+
+2. I do think that code examples are just as important. How do you bridge the theoretical (concepts)
+and the practical (code)? One answer could be to illustrate each concept with the simplest
+of examples.
+
+3. Ideally, examples should have an anchor in previous knowledge. That is, you learn best when
+you are able to relate the new stuff to something you already know and have used. Actually, there
+is a whole teaching methodology that teaches new languages by translating programs from a familiar language to the new one (exorcism).
+
+##Referential transparency
+How we think about programs in FP: equational thinking.
+
+Example: in math, 2+2 can be substituted by 4, and vice versa. This is the universal FP pattern
+originating from lambda calculus.
+
+The function at the core of LISP: eval. Thanks to eval, LISP can evaluate itself!
+
+###Reading
+* https://en.wikipedia.org/wiki/Referential_transparency
+* https://wiki.haskell.org/Referential_transparency
+* http://maniagnosis.crsr.net/2010/12/equational-programming.html
+* http://myhaskelljournal.com/an-exercise-in-equational-reasoning/
+* https://en.wikipedia.org/wiki/Lambda_calculus
+
+##Immutability
+Variables: local vs non-local
+
+State. Computation produces intermediate results / values, where do we store them?
+
+**Example: the *for* loop.**
+
+Stateful (C-style syntax):
+
+    #include<stdio.h>
+
+    int main() {
+       int i = 1;
+
+       for (i = 1; i <= 10; i++) {
+          printf("%d", i);
+       }
+       return (0);
+    }
+
+(Source: http://www.c4learn.com/c-programs/c-program-to-print-first-10-natural.html)
+
+Stateless (Clojure):
+
+    (loop [i 1]
+      (when (<= i 10)
+        (println i)
+        (recur (inc i))))
+
+(Sources:
+
+* http://stackoverflow.com/questions/6520699/how-do-i-print-a-list-of-numbers-on-each-line-in-clojure
+* https://clojuredocs.org/clojure.core/loop)
+
+Functions: pure & impure.
+
+Side effect. This arises from non-local variables.
+
+Global mutable state. Parallel to above point.
+
+Functions vs methods. Functions obey referential transparency, while methods do not.
+
+**Example:**
+This is taken from Fogus'es JoC:
+
+    # This is Python code
+    x = [5]
+    process(x)
+    x[0] = x[0] + 1
+
+How can you be sure that the final value of x is 6?
+
+Statements vs expressions. Pure functions compose to pure expressions; methods compose to statements.
+Pure expressions obey referential transparency, while statements do not.
+
+**Example: inc() function**
+Impure vs pure (doesn't depend on non-local vars)
+
+    inc(x): x + a        // impure
+    inc(x, a): x + a     // pure
+
+Also: inc() function: mutable vs immutable (doesn't overwrite anything in-place)
+
+    inc(x): x = x + a // impure wrt both a and x
+
+**TODO: Exercise**
+Let's write a pure version of inc()
+
+g(functional increment function). Finkel.
+
+https://www.quora.com/What-is-the-standard-idiom-for-implementing-an-increment-operator-in-functional-programming
+
+###Lessons
+1. In FP, state is often passed between functions (and function calls) via function arguments.
+
+2. Recursion and the above.
+
+Extended example: Guido's graphs.
+
+###Reading
+* https://en.wikipedia.org/wiki/Non-local_variable
+* https://en.wikipedia.org/wiki/Free_variables_and_bound_variables
+* https://en.wikipedia.org/wiki/State_%28computer_science%29
+* https://en.wikipedia.org/wiki/Pure_function
+* https://en.wikipedia.org/wiki/Side_effect_%28computer_science%29
+* http://www.lispcast.com/global-mutable-state
+* https://en.wikipedia.org/wiki/Expression_%28computer_science%29
+
+##Confluence: the order of declaration doesn't matter
+Relation to declarative and logical programming
+
+Declarative tells the computer *what* to do; imperative tells *how* to do it. Parallel to
+expressions vs statements again.
+
+FP is a subset of declarative.
+
+Order of declaration shouldn't matter: confluence.
+
+(Do more research on this, not enough examples related to FP.)
+
+###Reading
+* https://en.wikipedia.org/wiki/Declarative_programming
+* https://en.wikipedia.org/wiki/Confluence_%28abstract_rewriting%29
+
+##Immutability and Statelessness, continued
+Immutability and state revisited
+Immutability for values: covered
+What about immutability for data structures?
+
+###Reading
+* https://en.wikipedia.org/wiki/Immutable_object
+* http://programmers.stackexchange.com/questions/235558/what-is-state-mutable-state-and-immutable-state
+* https://en.wikipedia.org/wiki/Persistent_data_structure
+
+#Functions as main unit of abstraction ("1st-class citizens")
+Functions as values
+
+Passing and returning functions
+
+"It is better to have 100 functions operate on one data structure than to have 10 functions
+operate on 10 data structures." - Alan J. Perlis (http://clojure.org/about/rationale)
+
+Partial function application, currying
+
+##Pareto analysis applied to FP: a small number of functions doing 80% of the job.
+* map, reduce/inject, select
+* Clojure's built-in functions
+
+#Types
+In Haskell, these work as kind of a program specification mechanism. So in Haskell,
+there is a way to make a program consisting solely of input and output specifications
+(in form of types), with no function body, to compile! This is a powerful method of
+contract-based programming.
+
+Cover the Haskell stuff: algebraic data types, pattern matching
+
+#TODO: FP in Ruby list
+Don't forget Proctor's blog posts. And the recently printed-out article ("Immutability in Ruby"). Also,
+solnic's Transformers.
+
+##Some thoughts on 'Selling FP'
+Some people have wondered how they should go about explaining the benefits of FP to
+people from other paradigms. For me it's simple:
+
+*FP allows us to solve problems by minimizing and avoiding complexity in our code.*
+
+This is valuable because most of the time, *complexity is the problem*.
+
+Like Einstein supposedly said, "Problems cannot be solved at the same level of thinking
+that generated them".
+
+Bugs are a drain on time, budgets, energy, and enjoyment of programming. Bugs arise from:
+
+1. Complexity (cyclomatic; size of codebase; the abstractions we choose)
+2. Mutable state
+
+FP solves both.
+
+It solves 1) by not relying on complex abstractions (like objects); and limiting code to
+data + functions. Code is simply functions applied to data. At the same time, *code itself*
+is data, which is the most powerful abstraction available in the whole of programming, period.
+So FP is both simple AND powerful.
+
+It solves 2) by banishing global mutable state.
+
+So it follows that if you want to have less bugs, study FP.
+
+##How Computer Science goodness becomes easy & natural when you're doing FP
+Proving programs becomes easier because no global mutable state, hence no side effects.
+
+Pre- and post-condtions fall naturally out of the function abstraction. All you have is
+functions, their arguments / input, and output. That's one simple abstraction not entangled
+with anything on the outside that it has no control over.
+
+For this reason, testing becomes much easier.
+
+This is what "reasoning about programs" means — it's not some abstract philosophical pastime
+in which we get to argue whether this or that program is "good" and why; it's about
+*proving program correctness*.
+
+
+
