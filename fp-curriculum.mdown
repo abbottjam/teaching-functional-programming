@@ -127,8 +127,10 @@ Order of declaration shouldn't matter: confluence.
 * https://en.wikipedia.org/wiki/Confluence_%28abstract_rewriting%29
 
 ##4. Immutability and Statelessness, continued
-Immutability and state revisited
-Immutability for values: covered
+Immutability and state revisited.
+
+Immutability for values: covered.
+
 What about immutability for data structures?
 
 ###Reading
