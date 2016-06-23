@@ -13,7 +13,7 @@ A couple of points regarding teaching methodology:
 ##1. Referential transparency
 How we think about programs in FP: equational thinking.
 
-Example: in math, 2+2 can be substituted by 4, and vice versa. This is the universal FP pattern originating from lambda calculus.
+**Example:** in math, 2+2 can be substituted by 4, and vice versa. This is the universal FP pattern originating from lambda calculus.
 
 The function at the core of LISP: eval. Thanks to eval, LISP can evaluate itself!
 
@@ -29,7 +29,7 @@ Variables: local vs non-local
 
 State. Computation produces intermediate results / values, where do we store them?
 
-###Example: the *for* loop.
+**Example:** the *for* loop.
 
 Stateful (C-style syntax):
 
@@ -66,7 +66,8 @@ Global mutable state. Parallel to above point.
 
 Functions vs methods. Functions obey referential transparency, while methods do not.
 
-###Example:
+**Example**
+
 This is taken from The Joy of Clojure by Fogus & Houser:
 
     # This is Python code
@@ -80,7 +81,7 @@ Statements vs expressions.
 
 Pure functions compose to pure expressions; methods compose to statements. Pure expressions obey referential transparency, while statements do not.
 
-###Example: inc() function
+**Example:** inc() function
 
 Impure vs pure (doesn't depend on non-local vars)
 
@@ -91,7 +92,8 @@ Also: inc() function: mutable vs immutable (doesn't overwrite anything in-place)
 
     inc(x): x = x + a // impure wrt both a and x
 
-###TODO: Exercise
+**TODO: Exercise**
+
 Let's write a pure version of inc()
 
 g(functional increment function). Finkel.
