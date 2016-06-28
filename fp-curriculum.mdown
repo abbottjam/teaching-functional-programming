@@ -184,11 +184,11 @@ Immutability in Ruby (Deveo Blog)
 ###Libraries
 [Ruby Functional Programming](https://github.com/tokland/tokland/wiki/RubyFunctionalProgramming), a great collections of idioms and patterns
 
-[Transproc library](https://github.com/solnic/transproc): Transform Ruby objects in functional style
+[Transproc library](https://github.com/solnic/transproc): transform Ruby objects in functional style
 
 [Celluloid](https://github.com/celluloid/celluloid): actor-based concurrent object framework for Ruby
 
-[Hamster](https://github.com/hamstergem/hamster): Efficient, Immutable, Thread-Safe Collection classes for Ruby
+[Hamster](https://github.com/hamstergem/hamster): efficient, immutable, thread-safe collection classes for Ruby
 
 ###Lisp in Ruby
 In addition to all the above, I found it very educational to read the code for some Lisp implementations in Ruby. That really teaches you things. There are some cool projects out there:
