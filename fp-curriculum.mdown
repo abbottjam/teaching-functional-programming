@@ -184,7 +184,7 @@ Immutability in Ruby (Deveo Blog)
 ###Libraries
 [Ruby Functional Programming](https://github.com/tokland/tokland/wiki/RubyFunctionalProgramming), a great collections of idioms and patterns
 
-[Transproc library](https://github.com/solnic/transproc): transform Ruby objects in functional style
+[Transproc](https://github.com/solnic/transproc): transform Ruby objects in functional style
 
 [Celluloid](https://github.com/celluloid/celluloid): actor-based concurrent object framework for Ruby
 
