@@ -186,15 +186,16 @@ Immutability in Ruby (Deveo Blog)
 
 [Transproc library](https://github.com/solnic/transproc), by solnic
 
-[Celluloid](https://github.com/celluloid/celluloid), actor-based concurrent object framework for Ruby
+[Celluloid](https://github.com/celluloid/celluloid): actor-based concurrent object framework for Ruby
 
-[Hamster](https://github.com/hamstergem/hamster), Efficient, Immutable, Thread-Safe Collection classes for Ruby
+[Hamster](https://github.com/hamstergem/hamster): Efficient, Immutable, Thread-Safe Collection classes for Ruby
 
 ###Lisp in Ruby
+In addition to all the above, I found it helpful to read the code for some Lisp implementations in Ruby. That really teaches you things. There are some cool projects out there:
 
 * [Lispy](https://github.com/ryan-allen/lispy)
 * [Sxp-Ruby](https://github.com/bendiken/sxp-ruby)
-* [Ulithp](https://github.com/readevalprintlove/ulithp)
+* [Ulithp](https://github.com/readevalprintlove/ulithp) by Michael Fogus, my favorite
 * [Lispy-Ruby](https://github.com/timothyandrew/lispy-ruby)
 
 ##Some thoughts on 'Selling FP'
