@@ -162,35 +162,36 @@ In Haskell, these work as kind of a program specification mechanism. So in Haske
 ##8. Advanced topics
 Cover the Haskell stuff: algebraic data types, pattern matching, etc
 
-##TODO: FP in Ruby list
-Don't forget Proctor's blog posts. And the recently printed-out article ("Immutability in Ruby"). Also, solnic's Transformers.
+##FP in Ruby
+Here's a list of FP articles and libraries using Ruby. I found these very helpful in grokking FP in a language I was already familiar with.
 
-Functional Programming Techniques with Ruby:
+###Functional Programming Techniques with Ruby, by Nathan Klein:
 
-* [part 1](https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-i/)
-* [part 2](https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-ii/)
-* [part 3](https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-iii/)
+1. [Part one](https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-i/)
+2. [Part two](https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-ii/)
+3. [Part three](https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-iii/)
 
-[Ruby Functional Programming](https://github.com/tokland/tokland/wiki/RubyFunctionalProgramming)
+[Ruby Functional Programming](https://github.com/tokland/tokland/wiki/RubyFunctionalProgramming), a great collections of idioms and patterns
 
 [Proctor's FP blog posts](https://www.proctor-it.com/tag/functional-programming/)
 
-Immutability in Ruby:
+###Immutability in Ruby (Deveo Blog)
 
-[part 1](http://blog.deveo.com/immutability-in-ruby-part-1-data-structures/)
-[part 2](http://blog.deveo.com/immutability-in-ruby-part-2-domain-models/)
+1. [Part one](http://blog.deveo.com/immutability-in-ruby-part-1-data-structures/)
+2. [Part two](http://blog.deveo.com/immutability-in-ruby-part-2-domain-models/)
 
-https://github.com/solnic/transproc
+[Transproc library](https://github.com/solnic/transproc), by solnic
 
-https://github.com/celluloid/celluloid
-https://github.com/hamstergem/hamster
+[Celluloid](https://github.com/celluloid/celluloid)
+[Hamster](https://github.com/hamstergem/hamster)
 
-Lisp in Ruby list
-https://github.com/ryan-allen/lispy
-https://github.com/bendiken/sxp-ruby
-https://github.com/readevalprintlove/ulithp
-https://github.com/timothyandrew/lispy-ruby
-http://www.randomhacks.net/2005/12/03/why-ruby-is-an-acceptable-lisp/
+###Lisp in Ruby
+
+[Lispy](https://github.com/ryan-allen/lispy)
+[Sxp-Ruby](https://github.com/bendiken/sxp-ruby)
+[Ulithp](https://github.com/readevalprintlove/ulithp)
+[Lispy-Ruby](https://github.com/timothyandrew/lispy-ruby)
+[Why Ruby Is An Acceptable Lisp](http://www.randomhacks.net/2005/12/03/why-ruby-is-an-acceptable-lisp/)
 
 ##Some thoughts on 'Selling FP'
 Some people have wondered how they should go about explaining the benefits of FP to people coming from other paradigms. To me it's simple:
