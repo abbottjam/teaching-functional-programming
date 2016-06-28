@@ -165,6 +165,33 @@ Cover the Haskell stuff: algebraic data types, pattern matching, etc
 ##TODO: FP in Ruby list
 Don't forget Proctor's blog posts. And the recently printed-out article ("Immutability in Ruby"). Also, solnic's Transformers.
 
+Functional Programming Techniques with Ruby:
+
+* [https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-i/](part 1)
+* [https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-ii/](part 2)
+* [https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-iii/](part 3)
+
+[https://github.com/tokland/tokland/wiki/RubyFunctionalProgramming](Ruby Functional Programming)
+
+[https://www.proctor-it.com/tag/functional-programming/](Proctor's FP blog posts)
+
+Immutability in Ruby:
+
+[http://blog.deveo.com/immutability-in-ruby-part-1-data-structures/](part 1)
+[http://blog.deveo.com/immutability-in-ruby-part-2-domain-models/](part 2)
+
+https://github.com/solnic/transproc
+
+https://github.com/celluloid/celluloid
+https://github.com/hamstergem/hamster
+
+Lisp in Ruby list
+https://github.com/ryan-allen/lispy
+https://github.com/bendiken/sxp-ruby
+https://github.com/readevalprintlove/ulithp
+https://github.com/timothyandrew/lispy-ruby
+http://www.randomhacks.net/2005/12/03/why-ruby-is-an-acceptable-lisp/
+
 ##Some thoughts on 'Selling FP'
 Some people have wondered how they should go about explaining the benefits of FP to people coming from other paradigms. To me it's simple:
 
