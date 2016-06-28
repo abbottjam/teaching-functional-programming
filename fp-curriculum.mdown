@@ -179,7 +179,7 @@ Immutability in Ruby (Deveo Blog)
 
 [Proctor's FP blog posts](https://www.proctor-it.com/tag/functional-programming/)
 
-[Why Ruby Is An Acceptable Lisp](http://www.randomhacks.net/2005/12/03/why-ruby-is-an-acceptable-lisp/)
+[Why Ruby Is An Acceptable Lisp](http://www.randomhacks.net/2005/12/03/why-ruby-is-an-acceptable-lisp/), by Eric Kidd.
 
 ###Libraries
 [Ruby Functional Programming](https://github.com/tokland/tokland/wiki/RubyFunctionalProgramming), a great collections of idioms and patterns
@@ -194,8 +194,8 @@ Immutability in Ruby (Deveo Blog)
 In addition to all the above, I found it very educational to read the code for some Lisp implementations in Ruby. That really teaches you things. There are some cool projects out there:
 
 * [Ulithp](https://github.com/readevalprintlove/ulithp) by Michael Fogus, very minimal, my favorite
-* [Lispy](https://github.com/ryan-allen/lispy)
 * [Lispy-Ruby](https://github.com/timothyandrew/lispy-ruby)
+* [Lispy](https://github.com/ryan-allen/lispy)
 * [Sxp-Ruby](https://github.com/bendiken/sxp-ruby)
 
 ##Some thoughts on 'Selling FP'
