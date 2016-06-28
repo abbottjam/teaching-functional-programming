@@ -172,12 +172,12 @@ Functional Programming Techniques with Ruby, by Nathan Klein:
 2. [Part two](https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-ii/)
 3. [Part three](https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-iii/)
 
-[Proctor's FP blog posts](https://www.proctor-it.com/tag/functional-programming/)
-
 Immutability in Ruby (Deveo Blog)
 
 1. [Part one](http://blog.deveo.com/immutability-in-ruby-part-1-data-structures/)
 2. [Part two](http://blog.deveo.com/immutability-in-ruby-part-2-domain-models/)
+
+[Proctor's FP blog posts](https://www.proctor-it.com/tag/functional-programming/)
 
 [Why Ruby Is An Acceptable Lisp](http://www.randomhacks.net/2005/12/03/why-ruby-is-an-acceptable-lisp/)
 
