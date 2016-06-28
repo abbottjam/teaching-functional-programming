@@ -227,7 +227,7 @@ Pre- and post-condtions fall naturally out of the function abstraction. All you 
 
 Because of that, testing becomes much easier.
 
-This is what "reasoning about programs" means — it's not some abstract philosophical pastime in which we get to argue whether this or that program is "good" and why; it's about *proving program correctness*.
+This is what "reasoning about programs" means — it's not some philosophical pastime in which we get to abstractly argue whether this or that program is "good" and why; it's about *proving program correctness*.
 
 
 
