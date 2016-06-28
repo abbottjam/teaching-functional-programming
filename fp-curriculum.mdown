@@ -191,7 +191,7 @@ Immutability in Ruby (Deveo Blog)
 [Hamster](https://github.com/hamstergem/hamster): Efficient, Immutable, Thread-Safe Collection classes for Ruby
 
 ###Lisp in Ruby
-In addition to all the above, I found it helpful to read the code for some Lisp implementations in Ruby. That really teaches you things. There are some cool projects out there:
+In addition to all the above, I found it very educational to read the code for some Lisp implementations in Ruby. That really teaches you things. There are some cool projects out there:
 
 * [Lispy](https://github.com/ryan-allen/lispy)
 * [Sxp-Ruby](https://github.com/bendiken/sxp-ruby)
