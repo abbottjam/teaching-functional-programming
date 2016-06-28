@@ -166,7 +166,7 @@ Cover the Haskell stuff: algebraic data types, pattern matching, etc
 Here's a list of FP articles and libraries using Ruby. I found these very helpful in grokking FP in a language I was already familiar with.
 
 ###Blog posts
-**Functional Programming Techniques with Ruby**, by Nathan Klein:
+Functional Programming Techniques with Ruby, by Nathan Klein:
 
 1. [Part one](https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-i/)
 2. [Part two](https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-ii/)
@@ -174,7 +174,7 @@ Here's a list of FP articles and libraries using Ruby. I found these very helpfu
 
 [Proctor's FP blog posts](https://www.proctor-it.com/tag/functional-programming/)
 
-**Immutability in Ruby** (Deveo Blog)
+Immutability in Ruby (Deveo Blog)
 
 1. [Part one](http://blog.deveo.com/immutability-in-ruby-part-1-data-structures/)
 2. [Part two](http://blog.deveo.com/immutability-in-ruby-part-2-domain-models/)
