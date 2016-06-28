@@ -167,18 +167,18 @@ Don't forget Proctor's blog posts. And the recently printed-out article ("Immuta
 
 Functional Programming Techniques with Ruby:
 
-* [https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-i/](part 1)
-* [https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-ii/](part 2)
-* [https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-iii/](part 3)
+* [part 1](https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-i/)
+* [part 2](https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-ii/)
+* [part 3](https://www.sitepoint.com/functional-programming-techniques-with-ruby-part-iii/)
 
-[https://github.com/tokland/tokland/wiki/RubyFunctionalProgramming](Ruby Functional Programming)
+[Ruby Functional Programming](https://github.com/tokland/tokland/wiki/RubyFunctionalProgramming)
 
-[https://www.proctor-it.com/tag/functional-programming/](Proctor's FP blog posts)
+[Proctor's FP blog posts](https://www.proctor-it.com/tag/functional-programming/)
 
 Immutability in Ruby:
 
-[http://blog.deveo.com/immutability-in-ruby-part-1-data-structures/](part 1)
-[http://blog.deveo.com/immutability-in-ruby-part-2-domain-models/](part 2)
+[part 1](http://blog.deveo.com/immutability-in-ruby-part-1-data-structures/)
+[part 2](http://blog.deveo.com/immutability-in-ruby-part-2-domain-models/)
 
 https://github.com/solnic/transproc
 
