@@ -193,9 +193,9 @@ Immutability in Ruby (Deveo Blog)
 ###Lisp in Ruby
 In addition to all the above, I found it very educational to read the code for some Lisp implementations in Ruby. That really teaches you things. There are some cool projects out there:
 
+* [Ulithp](https://github.com/readevalprintlove/ulithp) by Michael Fogus, very minimal, my favorite
 * [Lispy](https://github.com/ryan-allen/lispy)
 * [Lispy-Ruby](https://github.com/timothyandrew/lispy-ruby)
-* [Ulithp](https://github.com/readevalprintlove/ulithp) by Michael Fogus, very minimal, my favorite
 * [Sxp-Ruby](https://github.com/bendiken/sxp-ruby)
 
 ##Some thoughts on 'Selling FP'
